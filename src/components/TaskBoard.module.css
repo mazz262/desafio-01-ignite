@@ -1,0 +1,118 @@
+.board {
+    width: 100%;
+    min-width: 400px;
+    margin: 0 auto;
+}
+
+.todoForm {
+    display: flex;
+	justify-content: center;
+	margin: -1.5rem 0 4rem;
+	gap:.5rem;
+}
+
+.todoForm textarea {
+    background-color: var(--gray-500);
+    color: var(--gray-100);
+    width: 100%;
+    max-width: 39.875rem;
+    height: 3.375rem;
+    border: 1px solid var(--gray-700);
+    border-radius: 8px;
+    padding: 1rem;
+    resize: none;
+    line-height: 1;
+}
+
+.todoForm button[type=submit] {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    border: 0;
+    padding: 1rem;
+    gap: 0.5rem;
+    border-radius: 8px;
+    color: var(--gray-100);
+    font-size: 0.875rem;
+    font-weight: 700;
+    background-color: var(--blue-dark);
+}
+
+.todoForm button[type=submit]:disabled {
+    opacity: 0.8;
+    cursor: not-allowed;
+}
+
+header.tasksContainer {
+    display: flex;
+    width: 47.8rem;
+    justify-content: space-between;
+    margin: 4rem auto 1.5rem;
+    padding-inline: 1rem;
+}
+
+.tasksContainer 
+.tasksCreated, 
+.tasksDone {
+	display: flex;
+	align-items: center;
+	gap:.5rem;
+}
+
+.tasksContainer
+.tasksCreated p {
+	font-size: 0.875rem;
+	font-weight: 700;
+	color: var(--blue);
+}
+
+.tasksDone p {
+	font-size: 0.875rem;
+	font-weight: 700;
+	color: var(--purple);
+}
+
+.tasksContainer span {
+	background: var(--gray-400);
+    color: var(--gray-200);
+    padding: 0.188rem 0.563rem;
+    border-radius: 999px;
+    font-size: 0.75rem;
+    font-weight: 700;
+}
+
+.tasksBox {
+    display: block;
+    justify-content: center;
+    align-items: center;
+    width: 46rem;
+    height: 15.25rem;
+    border-top: 1px solid var(--gray-300);
+    border-radius: 8px;
+    margin: auto;
+}
+
+.tasksBox .tasksBoxContent {
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+.tasksBox .tasksBoxContent img {
+    display: flex;
+    margin: 4rem auto 1rem;
+}
+
+.tasksBox .tasksBoxContent p {
+    width: 20.875rem;
+    margin: auto;
+    font-style: normal;
+    font-size: 16px;
+    line-height: 140%;
+    text-align: center;
+    color: var(--gray-300);
+    flex: none;
+    order: 1;
+    align-self: stretch;
+    flex-grow: 0;
+}
